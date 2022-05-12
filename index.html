@@ -12,21 +12,35 @@
   <body>
     <header class="head">
       <h1 class="header__title">Lista de la compra</h1>
+      <li class="header__list">
+        <ul class="list__elemets">
+          Principal
+        </ul>
+        <ul class="list__elemets">
+          Lista
+        </ul>
+        <ul class="list__elemets">
+          Acerca de
+        </ul>
+      </li>
     </header>
-    <li class="header__list">
-      <ul class="list__elemets">
-        Principal
-      </ul>
-      <ul class="list__elemets">
-        Lista
-      </ul>
-      <ul class="list__elemets">
-        Acerca de
-      </ul>
-    </li>
     <div class="midlecontainer">
       <div class="midlecontainer__icon">–</div>
       <div class="midlecontainer_title">2/3 comprados</div>
     </div>
+    <main>
+      <h2>Editar artículo</h2>
+      <form action="main.html" method="POST">
+        <label for="name">Nombre:</label>
+        <br />
+        <input type="text" name="name" id="name" />
+      </form>
+      <form action="main.html" method="POST">
+        <label for="price">Precio:</label>
+        <br />
+        <input type="text" name="price" id="price" />
+      </form>
+      <input type="button" value="Modificar" onclick="HandleBroweClick()" />
+    </main>
   </body>
 </html>
