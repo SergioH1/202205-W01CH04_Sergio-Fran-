@@ -1,19 +1,38 @@
 body,
 main,
 header,
-.midlecontainer {
+.midlecontainer .finalcontainer {
+  font-family: sans-serif;
   margin: 0;
   padding: 0;
   border: 0;
   font-size: 100%;
 }
-head {
-  background-color: rgba(0, 0, 255, 0.51);
+.header {
+  background-color: rgb(0, 89, 255);
   display: flex;
-  flex-direction: row;
   &__title {
+    font-size: 1.5rem;
     justify-content: flex-start;
+    align-items: center;
   }
   &__list {
+    list-style: none;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
   }
+}
+.midlecontainer {
+  margin: 0;
+  height: 3rem;
+  background-color: orangered;
+}
+.finalcontainer {
+  height: 600px;
+  background-color: orange;
+}
+.list__elements {
+  list-style: none;
+  padding: 10px 20px;
 }
